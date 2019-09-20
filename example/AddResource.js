@@ -56,7 +56,7 @@ class AddResource extends Component{
                     visible={this.state.visible}
                     onCancel={this.handleCancel}
                     onCreate={this.handleCreate}
-                    addResource={this.addResource}
+                    // addResource={this.addResource}
                 />
             </div>
         );
@@ -188,6 +188,7 @@ class AddResource extends Component{
         let newFreshId = schedulerData.resources.length + 1;
         let newFreshName = resourceName;
         schedulerData.addResource({id: newFreshId, name: newFreshName});
+        console.log(schedulerData.resources.length);
         this.setState({
             viewModel: schedulerData
         })

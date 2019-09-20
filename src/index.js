@@ -127,6 +127,8 @@ class Scheduler extends Component {
         onScrollRight: PropTypes.func,
         onScrollTop: PropTypes.func,
         onScrollBottom: PropTypes.func,
+
+        popupEvent: PropTypes.func,
     }
 
     componentDidMount(props, state){

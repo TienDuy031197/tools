@@ -42,13 +42,18 @@
   ],
   "dependencies": {
     "antd": "^3.16.6",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
     "cpy": "^3.4.1",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.12",
     "react-dnd": "^7.5.0",
     "react-dnd-html5-backend": "^7.5.0",
     "react-dom": "^16.8.6",
+    "react-input-color": "^2.0.26",
+    "reactjs-popup": "^1.5.0",
     "rrule": "^2.6.0"
   },
   "devDependencies": {

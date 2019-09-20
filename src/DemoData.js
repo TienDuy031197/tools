@@ -1,41 +1,111 @@
 const DemoData = {
     resources: [
-        {
-            id: 'r0',
-            name: 'Resource0',
-            groupOnly: true,
-        },
-        {
-            id: 'r1',
-            name: 'Resource1',
-            parentId: 'r0',
-        },
-        {
-            id: 'r2',
-            name: 'Resource2',
-            parentId: 'r3',
-        },
-        {
-            id: 'r3',
-            name: 'Resource3',
-            parentId: 'r1',
-        },
-        {
-            id: 'r4',
-            name: 'Resource4',
-        },
-        {
-            id: 'r5',
-            name: 'Resource5',
-        },
-        {
-            id: 'r6',
-            name: 'Resource6',
-        },
-        {
-            id: 'r7',
-            name: 'Resource7Resource7Resource7Resource7Resource7',
-        }
+        // {
+        //     id:0,
+        //     name: 'nguyen tien duy',
+        //     email: 'duynt4@topica.edu.vn',
+        //     department: 'TOX',
+        //     // groupOnly: true,
+        // },
+        // {
+        //     id: 1,
+        //     name: 'nguyen thi kim anh',
+        //     // parentId: 'r0',
+        // },
+        // {
+        //     id: 2,
+        //     name: 'nguyen trong toan',
+        //     // parentId: 'r3',
+        // },
+        // {
+        //     id: 3,
+        //     name: 'nguyen van tu',
+        //     // parentId: 'r1',
+        // },
+        // {
+        //     id: 4,
+        //     name: 'nguyen thi mo',
+        // },
+        // {
+        //     id: 5,
+        //     name: 'nguyen van a',
+        // },
+        // {
+        //     id: 6,
+        //     name: 'nguyen van b',
+        // },
+        // {
+        //     id: 7,
+        //     name: 'nguyen van c',
+        // },
+        // {
+        //     id: '8',
+        //     name: 'vi du',
+        // },
+        // {
+        //     id: '9',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '10',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '11',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '12',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '13',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '14',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '15',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '16',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '17',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '18',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '19',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '20',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '21',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '22',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '23',
+        //     name: 'vi du 1',
+        // },
+        // {
+        //     id: '24',
+        //     name: 'ket thuc',
+        // },
     ],
     events: [
         {
@@ -43,7 +113,7 @@ const DemoData = {
             start: '2017-12-18 09:30:00',
             end: '2017-12-19 23:30:00',
             resourceId: 'r1',
-            title: 'I am finished',
+            title: 'task1',
             bgColor: '#D9D9D9',
             showPopover: false
         },
@@ -52,7 +122,7 @@ const DemoData = {
             start: '2017-12-18 12:30:00',
             end: '2017-12-26 23:30:00',
             resourceId: 'r2',
-            title: 'I am not resizable',
+            title: 'task2',
             resizable: false
         },
         {
@@ -60,7 +130,7 @@ const DemoData = {
             start: '2017-12-19 12:30:00',
             end: '2017-12-20 23:30:00',
             resourceId: 'r3',
-            title: 'I am not movable',
+            title: 'task3',
             movable: false
         },
         {
@@ -68,7 +138,7 @@ const DemoData = {
             start: '2017-12-19 14:30:00',
             end: '2017-12-20 23:30:00',
             resourceId: 'r4',
-            title: 'I am not start-resizable',
+            title: 'task4',
             startResizable: false,
         },
         {
@@ -76,7 +146,7 @@ const DemoData = {
             start: '2017-12-19 15:30:00',
             end: '2017-12-20 23:30:00',
             resourceId: 'r5',
-            title: 'I am not end-resizable',
+            title: 'task5',
             endResizable: false
         },
         {
@@ -84,14 +154,14 @@ const DemoData = {
             start: '2017-12-19 15:35:00',
             end: '2017-12-19 23:30:00',
             resourceId: 'r6',
-            title: 'I am normal'
+            title: 'task6'
         },
         {
             id: 7,
             start: '2017-12-19 15:40:00',
             end: '2017-12-20 23:30:00',
             resourceId: 'r7',
-            title: 'I am exceptional',
+            title: 'task6',
             bgColor: '#FA9E95'
         },
         {
@@ -99,7 +169,7 @@ const DemoData = {
             start: '2017-12-19 15:50:00',
             end: '2017-12-19 23:30:00',
             resourceId: 'r1',
-            title: 'I am locked',
+            title: 'task7',
             movable: false,
             resizable: false,
             bgColor: 'red'
@@ -109,14 +179,14 @@ const DemoData = {
             start: '2017-12-19 16:30:00',
             end: '2017-12-27 23:30:00',
             resourceId: 'r1',
-            title: 'R1 has many tasks 1'
+            title: 'task9'
         },
         {
             id: 10,
             start: '2017-12-19 17:30:00',
             end: '2017-12-19 23:30:00',
             resourceId: 'r1',
-            title: 'R1 has recurring tasks every week on Tuesday, Friday',
+            title: 'task10',
             rrule: 'FREQ=WEEKLY;DTSTART=20171219T013000Z;BYDAY=TU,FR',
             bgColor: '#f759ab'
         },
@@ -125,28 +195,28 @@ const DemoData = {
             start: '2017-12-19 18:30:00',
             end: '2017-12-20 23:30:00',
             resourceId: 'r1',
-            title: 'R1 has many tasks 3'
+            title: 'task11'
         },
         {
             id: 12,
             start: '2017-12-20 18:30:00',
             end: '2017-12-20 23:30:00',
             resourceId: 'r1',
-            title: 'R1 has many tasks 4'
+            title: 'task12'
         },
         {
             id: 13,
             start: '2017-12-21 18:30:00',
             end: '2017-12-24 23:30:00',
             resourceId: 'r1',
-            title: 'R1 has many tasks 5'
+            title: 'task13'
         },
         {
             id: 14,
             start: '2017-12-23 18:30:00',
             end: '2017-12-27 23:30:00',
             resourceId: 'r1',
-            title: 'R1 has many tasks 6'
+            title: 'task14'
         },
     ],
     eventsForTaskView: [

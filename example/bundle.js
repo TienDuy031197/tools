@@ -22,6 +22,9 @@ import InfiniteScroll from './InfiniteScroll'
 import InfiniteScroll2 from './InfiniteScroll2'
 import ComingSoon from './ComingSoon'
 import CustomPopoverStyle from './CustomPopoverStyle'
+import ListButton from './ListButton'
+import AddResourceCustom from './AddResourceCustom'
+import AddProject from './AddProject'
 
 render((
     <Router>
@@ -46,6 +49,9 @@ render((
         <Route path="/infinitescroll" component={InfiniteScroll}/>
         <Route path="/infinitescroll2" component={InfiniteScroll2}/>
         <Route path="/custompopover" component={CustomPopoverStyle}/>
+        <Route path="/listbutton" component={ListButton}/>
+        <Route path="/addresourcecustom" component={AddResourceCustom}/>
+        <Route path="/addproject" component={AddProject}/>
     </Router>
 ), document.getElementById('root'))
 

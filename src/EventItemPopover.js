@@ -28,7 +28,8 @@ class EventItemPopover extends Component {
         const {schedulerData, eventItem, title, startTime, endTime, statusColor,subtitleGetter, viewEventClick, viewEventText, viewEvent2Click, viewEvent2Text, eventItemPopoverTemplateResolver} = this.props;
         const {localeMoment, config} = schedulerData;
         let start = localeMoment(startTime), end = localeMoment(endTime);
-
+        console.log("bat dau",start);
+        console.log("ket thuc", end);
         if (eventItemPopoverTemplateResolver != undefined) {
             return eventItemPopoverTemplateResolver(schedulerData, eventItem, title, start, end, statusColor);
         } else {
@@ -59,7 +60,7 @@ class EventItemPopover extends Component {
                 if(viewEvent2Text !== undefined && viewEvent2Click !== undefined && (eventItem.clickable2 == undefined || eventItem.clickable2)) {
                     col = (
                         <Col span={22}>
-                            <span className="header2-text" style={{color: '#108EE9', cursor: 'pointer'}} onClick={() => {viewEventClick(schedulerData, eventItem);}}>{viewEventText}</span><span className="header2-text" style={{color: '#108EE9', cursor: 'pointer', marginLeft: '16px'}} onClick={() => {viewEvent2Click(schedulerData, eventItem);}}>{viewEvent2Text}</span>
+                            {/* <span className="header2-text" style={{color: '#108EE9', cursor: 'pointer'}} onClick={() => {viewEventClick(schedulerData, eventItem);}}>{viewEventText}</span><span className="header2-text" style={{color: '#108EE9', cursor: 'pointer', marginLeft: '16px'}} onClick={() => {viewEvent2Click(schedulerData, eventItem);}}>{viewEvent2Text}</span> */}
                         </Col>
                     )
                 };
@@ -75,7 +76,7 @@ class EventItemPopover extends Component {
             else if(viewEvent2Text !== undefined && viewEvent2Click !== undefined && (eventItem.clickable2 == undefined || eventItem.clickable2)) {
                 let col = (
                     <Col span={22}>
-                        <span className="header2-text" style={{color: '#108EE9', cursor: 'pointer'}} onClick={() => {viewEvent2Click(schedulerData, eventItem);}}>{viewEvent2Text}</span>
+                        {/* <span className="header2-text" style={{color: '#108EE9', cursor: 'pointer'}} onClick={() => {viewEvent2Click(schedulerData, eventItem);}}>{viewEvent2Text}</span> */}
                     </Col>
                 );
                 opsRow = (
@@ -93,10 +94,11 @@ class EventItemPopover extends Component {
                 <div style={{width: '300px'}}>
                     <Row type="flex" align="middle">
                         <Col span={2}>
-                            <div className="status-dot" style={{backgroundColor: statusColor}} />
+                            {/* <div className="status-dot" style={{backgroundColor: statusColor}} /> */}
+                            <div />
                         </Col>
                         <Col span={22} className="overflow-text">
-                            <span className="header2-text" title={title}>{title}</span>
+                            <span className="header2-text" title={title}>Project {title}</span>
                         </Col>
                     </Row>
                     {subtitleRow}
@@ -105,7 +107,8 @@ class EventItemPopover extends Component {
                             <div />
                         </Col>
                         <Col span={22}>
-                            <span className="header1-text">{start.format('HH:mm')}</span><span className="help-text" style={{marginLeft: '8px'}}>{start.format(dateFormat)}</span><span className="header2-text"  style={{marginLeft: '8px'}}>-</span><span className="header1-text" style={{marginLeft: '8px'}}>{end.format('HH:mm')}</span><span className="help-text" style={{marginLeft: '8px'}}>{end.format(dateFormat)}</span>
+                            {/* <span className="header1-text">{start.format('HH:mm')}</span><span className="help-text" style={{marginLeft: '8px'}}>{start.format(dateFormat)}</span><span className="header2-text"  style={{marginLeft: '8px'}}>-</span><span className="header1-text" style={{marginLeft: '8px'}}>{end.format('HH:mm')}</span><span className="help-text" style={{marginLeft: '8px'}}>{end.format(dateFormat)}</span> */}
+                            <span className="help-text" style={{marginLeft: '8px'}}>{start.format(dateFormat)}</span><span className="header2-text"  style={{marginLeft: '8px'}}>-</span><span className="help-text" style={{marginLeft: '8px'}}>{end.format(dateFormat)}</span>
                         </Col>
                     </Row>
                     {opsRow}
